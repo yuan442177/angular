@@ -1,0 +1,7 @@
+<a [routerLink]="['/home']">主页</a>
+<a [routerLink]="['/product']" [queryParams]="{id:1}">商品详情</a>查询方式传参 -->
+<a [routerLink]="['/product',1]" >商品详情</a>url方式
+<input type="button" value="商品详情" (click)="toProductDetails()">
+<router-outlet></router-outlet>
+<router-outlet name="aux"></router-outlet>
+
